@@ -2131,6 +2131,7 @@ static int msm_fb_commit_thread(void *data)
 	struct fb_info *info;
 	struct msm_fb_backup_type *fb_backup;
 	u32 overlay_commit = false;
+	struct msm_fb_panel_data *pdata;
 
 	pdata = mfd->pdev->dev.platform_data;
 	while (!kthread_should_stop()) {

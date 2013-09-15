@@ -413,6 +413,8 @@ struct msm_panel_common_pdata {
 	u32 ov0_wb_size;  /* overlay0 writeback size */
 	u32 ov1_wb_size;  /* overlay1 writeback size */
 	u32 mem_hid;
+	u32 splash_screen_addr;
+	u32 splash_screen_size;
 	char cont_splash_enabled;
 	char mdp_iommu_split_domain;
 };
