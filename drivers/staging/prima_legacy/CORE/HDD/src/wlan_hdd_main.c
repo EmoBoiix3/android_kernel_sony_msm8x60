@@ -152,9 +152,9 @@ module_param_string(fwpath, fwpath, BUF_LEN,
 #define WLAN_HDD_RESTART_RETRY_DELAY_MS 5000  /* 5 second */
 #define WLAN_HDD_RESTART_RETRY_MAX_CNT  5     /* 5 retries */
 
-#if (LINUX_VERSION_CODE < KERNEL_VERSION(3,4,5))
+//#if (LINUX_VERSION_CODE < KERNEL_VERSION(3,4,5))
 static struct wake_lock wlan_wake_lock;
-#endif
+//#endif
 /* set when SSR is needed after unload */
 static v_U8_t      isSsrRequired;
 
